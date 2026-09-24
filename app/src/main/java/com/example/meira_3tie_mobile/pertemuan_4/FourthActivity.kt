@@ -8,6 +8,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.meira_3tie_mobile.MainActivity
 import com.example.meira_3tie_mobile.databinding.ActivityFourthBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.snackbar.Snackbar
 
 class FourthActivity : AppCompatActivity() {
 
@@ -42,6 +44,31 @@ class FourthActivity : AppCompatActivity() {
 //            val intent = Intent(this, MainActivity::class.java)
 //            startActivity(intent)
             finish()
+        }
+
+        binding.btnShowSnackBar.setOnClickListener {
+            Snackbar.make(binding.root, "Ini adalah Snackbar", Snackbar.LENGTH_SHORT)
+                .setAction("Tampilkan"){
+//                    val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+                    Log.e("Info Snackbar","Snackbar ditutup")
+                }
+                .show()
+        }
+
+        binding.btnShowAlertDialog.setOnClickListener {
+            MaterialAlertDialogBuilder(this)
+                .setTitle("Konfirmasi")
+                .setMessage("Apakah Anda yakin ingin melanjutkan?")
+                .setPositiveButton("Ya") { dialog, _ ->
+                    dialog.dismiss()
+                    Log.e("Info Dialog","Anda memilih Ya!")
+                }
+                .setNegativeButton("Batal") { dialog, _ ->
+                    dialog.dismiss()
+                    Log.e("Info Dialog","Anda memilih Tidak!")
+                }
+                .show()
         }
     }
 }
