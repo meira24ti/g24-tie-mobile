@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.meira_3tie_mobile.databinding.ActivityMainBinding
 import com.example.meira_3tie_mobile.pertemuan_4.FourthActivity
+import com.example.meira_3tie_mobile.pertemuan_5.FifthActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,13 +36,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnToFourth.setOnClickListener {
-            val intent = Intent(this, FourthActivity::class.java)
+            val i = Intent(this, FourthActivity::class.java)
 
             intent.putExtra("name", "Politeknik Caltex Riau")
             intent.putExtra("from", "Rumbai")
             intent.putExtra("age", 25)
 
-            startActivity(intent)
+            startActivity(i)
+        }
+
+        binding.btnToFifth.setOnClickListener {
+            val i = Intent(this, FifthActivity::class.java)
+            startActivity(i)
         }
     }
 }
