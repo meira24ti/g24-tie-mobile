@@ -3,6 +3,7 @@ package com.example.meira_3tie_mobile
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -34,9 +35,30 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
+
         binding.btnToFourth.setOnClickListener {
             val intent = Intent(this, FourthActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.btnLogout.setOnClickListener {
+
+            AlertDialog.Builder(this)
+                .setMessage("Apakah anda yakin ingin logout?")
+                .setPositiveButton("Ya") { dialog, _ ->
+
+                    val editor = sharedPref.edit()
+                    editor.clear()
+                    editor.apply()
+
+                    dialog.dismiss()
+                    finish()
+                }
+                .setNegativeButton("Tidak") { dialog, _ ->
+                    dialog.dismiss()
+                }
+                .show()
         }
     }
 }
