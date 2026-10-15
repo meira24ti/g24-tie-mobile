@@ -1,9 +1,11 @@
-package com.example.meira_3tie_mobile
+package com.example.meira_3tie_mobile.Home
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.example.meira_3tie_mobile.BaseActivity
+import com.example.meira_3tie_mobile.R
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -29,7 +31,7 @@ class SplashScreenActivity : AppCompatActivity() {
                 val intent =
                     Intent(
                         this@SplashScreenActivity,
-                        MainActivity::class.java
+                        BaseActivity::class.java
                     )
 
                 startActivity(intent)

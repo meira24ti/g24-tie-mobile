@@ -1,12 +1,14 @@
-package com.example.meira_3tie_mobile
+package com.example.meira_3tie_mobile.Home
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.meira_3tie_mobile.BaseActivity
 import com.example.meira_3tie_mobile.databinding.ActivityAuthBinding
 
 class AuthActivity : AppCompatActivity() {
+
 
     private lateinit var binding: ActivityAuthBinding
 
@@ -36,7 +38,7 @@ class AuthActivity : AppCompatActivity() {
                 editor.apply()
 
                 val intent =
-                    Intent(this, MainActivity::class.java)
+                    Intent(this, BaseActivity::class.java)
 
                 startActivity(intent)
 

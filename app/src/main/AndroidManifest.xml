@@ -12,44 +12,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Meira_3TIE_Mobile">
         <activity
-            android:name=".MainActivity"
+            android:name=".Home.pertemuan_3.ThirdActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan_3.ThirdActivity"
+            android:name=".Home.pertemuan_2.SecondActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan_2.SecondActivity"
+            android:name=".Home.pertemuan_3.ThirdResultActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan_3.ThirdResultActivity"
+            android:name=".Home.pertemuan_4.FourthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan_4.FourthActivity"
+            android:name=".Home.AuthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".AuthActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity
-            android:name=".SplashScreenActivity"
+            android:name=".BaseActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
-
             <intent-filter>
-
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
-
         </activity>
-
+        <activity
+            android:name=".Home.pertemuan_67.SeventhActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Home.SplashScreenActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

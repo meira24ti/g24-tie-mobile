@@ -1,11 +1,11 @@
-package com.example.meira_3tie_mobile.pertemuan_4
+package com.example.meira_3tie_mobile.Home.pertemuan_4
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.meira_3tie_mobile.MainActivity
+import com.example.meira_3tie_mobile.BaseActivity
 import com.example.meira_3tie_mobile.databinding.ActivityFourthBinding
 
 class FourthActivity : AppCompatActivity() {
@@ -33,7 +33,7 @@ class FourthActivity : AppCompatActivity() {
         }
 
         binding.btnKembali.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, BaseActivity::class.java)
             startActivity(intent)
         }
     }
