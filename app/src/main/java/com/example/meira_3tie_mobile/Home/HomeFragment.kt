@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.meira_3tie_mobile.Home.pertemuan_4.FourthActivity
 import com.example.meira_3tie_mobile.Home.pertemuan_67.SeventhActivity
 import com.example.meira_3tie_mobile.databinding.FragmentHomeBinding
+import com.example.meira_3tie_mobile.Home.pertemuan_10.TenthActivity
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
@@ -61,6 +62,17 @@ class HomeFragment : Fragment() {
                 }
                 .show()
         }
+
+        binding.btnToTenth.setOnClickListener {
+
+            val intent = Intent(
+                requireContext(),
+                TenthActivity::class.java
+            )
+
+            startActivity(intent)
+        }
+
     }
 
     override fun onDestroyView() {
