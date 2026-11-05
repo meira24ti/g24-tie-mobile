@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.meira_3tie_mobile.databinding.ActivityMainBinding
-import com.example.meira_3tie_mobile.pertemuan_4.FourthActivity
+import com.example.meira_3tie_mobile.Home.pertemuan_4.FourthActivity
 import com.example.meira_3tie_mobile.pertemuan_5.FifthActivity
 
 class MainActivity : AppCompatActivity() {
@@ -36,13 +36,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnToFourth.setOnClickListener {
-            val i = Intent(this, FourthActivity::class.java)
+            val intent = Intent(this, FourthActivity::class.java)
 
             intent.putExtra("name", "Politeknik Caltex Riau")
             intent.putExtra("from", "Rumbai")
             intent.putExtra("age", 25)
 
-            startActivity(i)
+            startActivity(intent)
         }
 
         binding.btnToFifth.setOnClickListener {
