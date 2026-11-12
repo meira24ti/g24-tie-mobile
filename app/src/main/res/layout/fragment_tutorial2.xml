@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6F5F1"
+    tools:context=".Message.tutorial.Tutorial2Fragment">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageTutorial2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_home"
+            android:contentDescription="Ikon Tutorial Pesan"
+            app:tint="#008577" />
+
+        <TextView
+            android:id="@+id/tvTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Lihat Daftar Pesan"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#00695C"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvDesc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Setiap pesan menampilkan foto profil, nama pengirim, dan isi pesan."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Ketuk salah satu pesan untuk menampilkan informasi pesan melalui Snackbar."
+            android:textSize="14sp"
+            android:textColor="#008577"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

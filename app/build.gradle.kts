@@ -39,6 +39,8 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -47,4 +49,8 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:5.0.9")
     annotationProcessor ("com.github.bumptech.glide:compiler:5.0.9")
     implementation("androidx.gridlayout:gridlayout:1.1.0")
+
+    implementation("androidx.viewpager2:viewpager2:1.1.0")
+    implementation("androidx.recyclerview:recyclerview:1.4.0")
+    implementation("com.tbuonomo:dotsindicator:5.1.0")
 }

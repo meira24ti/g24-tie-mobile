@@ -13,6 +13,7 @@ import com.example.meira_3tie_mobile.Home.pertemuan_4.FourthActivity
 import com.example.meira_3tie_mobile.Home.pertemuan_67.SeventhActivity
 import com.example.meira_3tie_mobile.databinding.FragmentHomeBinding
 import com.example.meira_3tie_mobile.Home.pertemuan_10.TenthActivity
+import com.example.meira_3tie_mobile.Home.pertemuan_11.EleventhActivity
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
@@ -68,6 +69,16 @@ class HomeFragment : Fragment() {
             val intent = Intent(
                 requireContext(),
                 TenthActivity::class.java
+            )
+
+            startActivity(intent)
+        }
+
+        binding.btnToEleventh.setOnClickListener {
+
+            val intent = Intent(
+                requireContext(),
+                EleventhActivity::class.java
             )
 
             startActivity(intent)

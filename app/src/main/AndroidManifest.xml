@@ -63,6 +63,15 @@
             android:name=".Home.pertemuan_10.TenthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Home.pertemuan_11.EleventhActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Message.tutorial.TutorialMessageActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Meira_3TIE_Mobile"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
