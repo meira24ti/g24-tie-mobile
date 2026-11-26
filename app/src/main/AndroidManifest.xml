@@ -72,6 +72,10 @@
             android:exported="false"
             android:theme="@style/Theme.Meira_3TIE_Mobile"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Note.NoteFormActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
